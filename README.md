@@ -19,12 +19,6 @@ ttermost
 * Use: [Mattermost](https://mattermost.com/) 
 
 ### setup
-##### Jira credentials
-* put credentials in [application.properties](src/main/resources/application.properties) `slashCommandToken=<YOUR_TOKEN>`  
-  * jira.username=<JIRA_USERNAME>
-  * jira.password=<JIRA_PASSWORD>
-  * jira.url=http:<JIRA_BASE_URL>
-
 ##### Mattermost Integration
 _Requires slash command and webhook integrations_
 * Ensure Custom Integrations (in System Console) has the following enabled
@@ -38,3 +32,9 @@ _Requires slash command and webhook integrations_
   * Request URL: `<path_to_mattermost-remind>/jira`
   * set jira system icon
   * put token in [application.properties](src/main/resources/application.properties) `slashCommandToken=<YOUR_TOKEN>`  
+##### Jira credentials
+* put credentials in [application.properties](src/main/resources/application.properties) 
+  * slashCommandToken=<YOUR_TOKEN>
+  * jira.username=<JIRA_USERNAME>
+  * jira.password=<JIRA_PASSWORD>
+  * jira.url=http:<JIRA_BASE_URL>
