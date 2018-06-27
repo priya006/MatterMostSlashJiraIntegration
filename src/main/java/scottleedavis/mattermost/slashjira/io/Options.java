@@ -41,6 +41,7 @@ public class Options {
             attachment.setText(jiraMessage);
             response.setAttachments(Arrays.asList(attachment));
             response.setText("##### ["+ticket+"]("+url+"/browse/"+ticket+")");
+            response.setResponseType(Response.ResponseType.IN_CHANNEL);
         } catch( Exception e ) {
             response.setText(Options.errorMessage);
         }
