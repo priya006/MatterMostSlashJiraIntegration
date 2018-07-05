@@ -9,7 +9,7 @@ import io.github.scottleedavis.mattermost.slashjira.messages.Attachment;
 
 import java.util.Arrays;
 
-@Component
+@Component(value = "SlashJira")
 public class Options {
 
     @Value("${jira.url}")
