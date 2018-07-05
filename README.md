@@ -1,6 +1,5 @@
 # mattermost-io.github.scottleedavis.mattermost.slashjira
-A /jira slash command for [Mattermost](https://mattermost.com/) built with [Spring Boot](https://spring.io/projects/spring-boot)
-ttermost [![Build Status](https://travis-ci.org/scottleedavis/mattermost-slashjira.svg?branch=master)](https://travis-ci.org/scottleedavis/mattermost-slashjira) [![codecov](https://codecov.io/gh/scottleedavis/mattermost-slashjira/branch/master/graph/badge.svg)](https://codecov.io/gh/scottleedavis/mattermost-slashjira)
+A /jira slash command for [Mattermost](https://mattermost.com/) built with [Spring Boot](https://spring.io/projects/spring-boot) [![Build Status](https://travis-ci.org/scottleedavis/mattermost-slashjira.svg?branch=master)](https://travis-ci.org/scottleedavis/mattermost-slashjira) [![codecov](https://codecov.io/gh/scottleedavis/mattermost-slashjira/branch/master/graph/badge.svg)](https://codecov.io/gh/scottleedavis/mattermost-slashjira)
  [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ddb524b9874144a6ae0029b3ec56bdf4)](https://www.codacy.com/app/scottleedavis/mattermost-slashjira?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=scottleedavis/mattermost-slashjira&amp;utm_campaign=Badge_Grade)
 
 `/jira [issue id]`
