@@ -32,9 +32,9 @@ public class Options {
         Response response = new Response();
         try {
             Issue issue = jiraService.getIssue(ticket);
-
+            String assignee = issue.getAssignee() != null ? issue.getAssignee().getName() : "Unassigned";
             String jiraMessage = "["+issue.getSummary()+"]("+url+"/browse/"+ticket+")\n" +
-                "*Assignee* " + issue.getAssignee().getName() +"\n" +
+                "*Assignee* " + assignee +"\n" +
                 "*Priority* "+issue.getPriority().getName() + "\n" +
                 issue.getDescription();
             Attachment attachment = new Attachment();
