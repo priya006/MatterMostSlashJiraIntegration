@@ -18,7 +18,7 @@ public class SlashCommand {
     Options options;
 
     @RequestMapping(value = "/jira", produces = "application/json")
-    public Response remind(
+    public Response jira(
             @ModelAttribute("token") String token,
             @ModelAttribute("team_id") String teamId,
             @ModelAttribute("team_domain") String teamDomain,
@@ -33,6 +33,10 @@ public class SlashCommand {
             @RequestHeader("Host") String host,
             @ModelAttribute("stage") String stage) throws Exception {
 
+        System.out.println("slashCommandToken" +slashCommandToken);
+        System.out.println("token" +token);
+
+
         if (!slashCommandToken.equals(token)) {
             throw new Exception("forbidden");
         }
@@ -40,4 +44,6 @@ public class SlashCommand {
         options.setAppUrl((scheme == null ? "http" : scheme) + "://" + host + "/" + stage);
         return options.responseMessage(text);
     }
+
+
 }
