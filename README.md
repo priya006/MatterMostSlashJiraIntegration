@@ -2,6 +2,7 @@
 -----------------
 1. Deploy the matter most app which is very similar to slack in `herokuapp`
 Example: https://mattermost<>.herokuapp.com/
+https://mattermostpriya006.herokuapp.com/
 2. Download ngork and generate the url. Example: http://a0ba5078660e.ngrok.io
 3. In the mattermost integration - Slash command  page enter the `reqest_url` as http://a0ba5078660e.ngrok.io/jira
 `/jira` should be present so that the backend recognises the input request from mattermost to backend
